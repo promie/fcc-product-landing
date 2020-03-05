@@ -1,11 +1,18 @@
 <script>
+import Navbar from '@/components/Navbar.vue'
+
 export default {
-  name: 'Landing'
+  name: 'Landing',
+  components: {
+    Navbar
+  }
 }
 </script>
 
 <template>
-  <h1>LANDING PAGE</h1>
+  <div>
+    <Navbar />
+  </div>
 </template>
 
 <style></style>
