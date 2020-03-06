@@ -1,133 +1,97 @@
 <script>
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-
 export default {
-  name: 'Navbar',
-  computed: {
-    hamburger() {
-      return faBars
-    }
-  }
+  name: 'Navbar'
 }
 </script>
 
 <template>
-  <nav class="navbar">
-    <span class="navbar-toggle" id="js-navbar-toggle">
-      <font-awesome-icon :icon="hamburger" />
-    </span>
-    <a href="#" class="logo">logo</a>
-    <ul class="main-nav" id="js-menu">
-      <li>
-        <a href="#" class="nav-links">Home</a>
-      </li>
-      <li>
-        <a href="#" class="nav-links">Products</a>
-      </li>
-      <li>
-        <a href="#" class="nav-links">About Us</a>
-      </li>
-      <li>
-        <a href="#" class="nav-links">Contact Us</a>
-      </li>
-      <li>
-        <a href="#" class="nav-links">Blog</a>
-      </li>
+  <header class="header">
+    <h1 class="logo"><a href="#">Northstar Fashsion</a></h1>
+    <ul class="main-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
-  </nav>
+  </header>
 </template>
 
 <style scoped>
-/* Desktop First Mobile Second, approach */
-
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
-
 body {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.navbar {
-  font-size: 18px;
-  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 10px;
+h2,
+h3,
+a {
+  color: #34495e;
 }
 
-.main-nav {
-  list-style-type: none;
-  display: none;
-}
-
-.nav-links,
-.logo {
+a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.main-nav li {
-  text-align: center;
-  margin: 15px auto;
 }
 
 .logo {
-  display: inline-block;
-  font-size: 22px;
-  margin-top: 10px;
-  margin-left: 20px;
+  margin: 0;
+  font-size: 1.45em;
 }
 
-.navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 24px;
-}
-
-.active {
+.logo a,
+.main-nav a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-align: center;
   display: block;
 }
 
-@media screen and (min-width: 768px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    height: 70px;
-    align-items: center;
-  }
+.main-nav a {
+  color: #34495e;
+  font-size: 0.99em;
+}
 
+.main-nav a:hover {
+  color: #718daa;
+}
+
+.header {
+  margin: 0px;
+  background-color: #f4f4f4;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  .header,
   .main-nav {
     display: flex;
-    margin-right: 30px;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header {
     flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .main-nav li {
-    margin: 0;
-  }
-
-  .nav-links {
-    margin-left: 40px;
-  }
-
-  .logo {
-    margin-top: 0;
-  }
-
-  .navbar-toggle {
-    display: none;
-  }
-
-  .logo:hover,
-  .nav-links:hover {
-    color: rgba(255, 255, 255, 1);
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
   }
 }
 </style>
