@@ -1,17 +1,20 @@
 <script>
 import Navbar from '@/components/Navbar.vue'
+import EmailSection from '@/components/EmailSection.vue'
 
 export default {
   name: 'Landing',
   components: {
+    EmailSection,
     Navbar
   }
 }
 </script>
 
 <template>
-  <div class="wrapper">
+  <div>
     <Navbar />
+    <email-section />
   </div>
 </template>
 

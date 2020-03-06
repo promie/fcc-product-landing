@@ -73,7 +73,7 @@ a {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .header,
   .main-nav {
     display: flex;
@@ -86,7 +86,7 @@ a {
   }
 }
 
-@media (min-width: 1025px) {
+@media only screen and (min-width: 1025px) {
   .header {
     flex-direction: row;
     justify-content: space-between;
