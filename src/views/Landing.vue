@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar.vue'
 import EmailSection from '@/components/EmailSection.vue'
 import Features from '@/components/Features.vue'
 import Video from '@/components/Video.vue'
+import Pricing from '@/components/Pricing.vue'
 
 export default {
   name: 'Landing',
@@ -10,7 +11,8 @@ export default {
     EmailSection,
     Navbar,
     Features,
-    Video
+    Video,
+    Pricing
   }
 }
 </script>
@@ -23,6 +25,9 @@ export default {
     <features />
     <features />
     <Video />
+    <Pricing />
+    <Pricing />
+
   </div>
 </template>
 

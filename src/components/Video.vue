@@ -15,6 +15,3 @@ export default {
     ></iframe>
   </div>
 </template>
-
-<style scoped>
-</style>
