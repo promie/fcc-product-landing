@@ -10,6 +10,3 @@ export default {
     <p>Our clothes</p>
   </div>
 </template>
-
-<style scoped>
-</style>
