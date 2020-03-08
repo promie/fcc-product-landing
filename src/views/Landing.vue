@@ -5,6 +5,7 @@ import Features from '@/components/Features.vue'
 import Video from '@/components/Video.vue'
 import Pricing from '@/components/Pricing.vue'
 import Footer from '@/components/Footer.vue'
+import { FEATURES } from '@/constants'
 
 export default {
   name: 'Landing',
@@ -15,6 +16,9 @@ export default {
     Video,
     Pricing,
     Footer
+  },
+  created() {
+    this.features = FEATURES
   }
 }
 </script>
@@ -22,13 +26,29 @@ export default {
 <template>
   <div class="landing-wrapper">
     <navbar />
-    <email-section />
-    <features />
-    <features />
-    <features />
-    <Video />
-    <Pricing />
-    <Pricing />
+
+    <div class="email-section">
+      <email-section />
+    </div>
+
+    <div class="features">
+      <features
+        v-for="feature in features"
+        v-bind:key="feature.id"
+        v-bind:title="feature.title"
+        v-bind:description="feature.description"
+      />
+    </div>
+
+    <div class="video">
+      <Video />
+    </div>
+
+    <div class="pricing">
+      <Pricing />
+      <Pricing />
+      <Pricing />
+    </div>
     <Footer />
   </div>
 </template>
@@ -37,5 +57,39 @@ export default {
 * {
   margin: 0;
   padding: 0;
+}
+
+.email-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.features {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.video {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.pricing {
+  align-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .landing-wrapper {
+    width: 100%;
+  }
+  .features {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 200px;
+  }
 }
 </style>

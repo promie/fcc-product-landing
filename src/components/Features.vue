@@ -1,12 +1,22 @@
 <script>
 export default {
-  name: 'Features'
+  name: 'Features',
+  props: {
+    title: {
+      type: String,
+      required: true
+    },
+    description: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>
 
 <template>
   <div>
-    <h3>Premium Materials</h3>
-    <p>Our clothes</p>
+    <h3>{{ title }}</h3>
+    <p>{{ description }}</p>
   </div>
 </template>
