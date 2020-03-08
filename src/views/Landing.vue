@@ -27,7 +27,6 @@ export default {
     <Video />
     <Pricing />
     <Pricing />
-
   </div>
 </template>
 
