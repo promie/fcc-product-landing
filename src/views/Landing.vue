@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="landing-wrapper">
     <navbar />
     <email-section />
     <features />

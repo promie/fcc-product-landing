@@ -83,7 +83,6 @@ a {
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    position: fixed;
   }
 }
 
@@ -93,7 +92,6 @@ a {
     justify-content: space-between;
     width: 100%;
     height: 70px;
-    position: fixed;
   }
 }
 </style>
