@@ -24,7 +24,7 @@ export default {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 80%;
+  width: 95%;
   margin: 10px;
   border: 1px solid #000;
   border-radius: 3px;

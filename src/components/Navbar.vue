@@ -8,10 +8,9 @@ export default {
   <header class="header">
     <h1 class="logo"><a href="#">Northstar Fashsion</a></h1>
     <ul class="main-nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">How It Works</a></li>
+      <li><a href="#">Pricing</a></li>
     </ul>
   </header>
 </template>
@@ -67,6 +66,9 @@ a {
 .header {
   margin: 0px;
   background-color: #f4f4f4;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 /* ================================= 
@@ -83,6 +85,9 @@ a {
     align-items: center;
     width: 80%;
     margin: 0 auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 }
 
@@ -92,6 +97,9 @@ a {
     justify-content: space-between;
     width: 100%;
     height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 }
 </style>

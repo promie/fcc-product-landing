@@ -25,6 +25,7 @@ footer {
 footer > ul {
   display: flex;
   justify-content: flex-end;
+  list-style: none;
 }
 
 footer > ul > li {

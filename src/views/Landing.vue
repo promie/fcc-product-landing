@@ -25,7 +25,9 @@ export default {
 
 <template>
   <div class="landing-wrapper">
-    <navbar />
+    <div class="navbar">
+      <navbar />
+    </div>
 
     <div class="email-section">
       <email-section />
@@ -63,7 +65,7 @@ export default {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 220px;
 }
 
 .features {
@@ -79,17 +81,24 @@ export default {
 }
 
 .pricing {
-  align-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 768px) {
   .landing-wrapper {
     width: 100%;
   }
+  .email-section {
+    margin-top: 95px;
+  }
   .features {
     flex-direction: row;
     justify-content: space-between;
     padding: 0px 200px;
+  }
+  .pricing {
+    flex-direction: row;
   }
 }
 </style>
