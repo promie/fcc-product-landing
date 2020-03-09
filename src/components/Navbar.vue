@@ -16,11 +16,12 @@ export default {
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+
 * {
   box-sizing: border-box;
 }
 body {
-  font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
   margin: 0;
   min-height: 100vh;
@@ -50,6 +51,7 @@ a {
 .main-nav a {
   padding: 10px 15px;
   text-transform: uppercase;
+  font-family: 'Dosis', sans-serif;
   text-align: center;
   display: block;
 }
@@ -65,7 +67,8 @@ a {
 
 .header {
   margin: 0px;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
+  background-color: pink;
   position: fixed;
   top: 0;
   width: 100%;
