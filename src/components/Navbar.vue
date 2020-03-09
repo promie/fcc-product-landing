@@ -6,7 +6,7 @@ export default {
 
 <template>
   <header class="header">
-    <h1 class="logo"><a href="#">Northstar Fashsion</a></h1>
+    <h1 class="logo"><a href="#">Northstar Fashion</a></h1>
     <ul class="main-nav">
       <li><a href="#">Features</a></li>
       <li><a href="#">How It Works</a></li>
