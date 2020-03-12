@@ -10,9 +10,9 @@ export default {
 </script>
 
 <template>
-  <header class="header">
+  <header id="header" class="header">
     <h1 class="logo"><a href="#">Northstar Fashion</a></h1>
-    <ul class="main-nav">
+    <ul class="main-nav" id="nav-bar">
       <li>
         <a href="#features" v-on:click.prevent="smoothScrollTo('#features')"
           >Features</a
