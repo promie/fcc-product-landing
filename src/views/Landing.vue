@@ -37,6 +37,7 @@ export default {
       <features
         v-for="feature in features"
         v-bind:key="feature.id"
+        v-bind:icon="feature.icon"
         v-bind:title="feature.title"
         v-bind:description="feature.description"
       />
@@ -72,7 +73,6 @@ export default {
   margin-top: 35px;
   display: flex;
   flex-direction: column;
-  text-align: center;
 }
 
 .video {
@@ -95,7 +95,7 @@ export default {
   .features {
     flex-direction: column;
     justify-content: space-between;
-    padding: 0px 200px;
+    padding: 0 200px;
   }
   .pricing {
     flex-direction: row;
