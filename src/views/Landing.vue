@@ -5,7 +5,7 @@ import Features from '@/components/Features.vue'
 import Video from '@/components/Video.vue'
 import Pricing from '@/components/Pricing.vue'
 import Footer from '@/components/Footer.vue'
-import { FEATURES } from '@/constants'
+import { FEATURES, PRODUCTS } from '@/constants'
 
 export default {
   name: 'Landing',
@@ -19,6 +19,7 @@ export default {
   },
   created() {
     this.features = FEATURES
+    this.products = PRODUCTS
   }
 }
 </script>
@@ -48,9 +49,13 @@ export default {
     </div>
 
     <div class="pricing">
-      <Pricing />
-      <Pricing />
-      <Pricing />
+      <Pricing
+        v-for="(product, index) in products"
+        v-bind:key="index"
+        v-bind:title="product.title"
+        v-bind:price="product.price"
+        v-bind:description="product.description"
+      />
     </div>
     <Footer />
   </div>
@@ -83,6 +88,7 @@ export default {
 .pricing {
   display: flex;
   flex-direction: column;
+  padding: 0 8px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -99,6 +105,7 @@ export default {
   }
   .pricing {
     flex-direction: row;
+    padding: 0 250px;
   }
 }
 </style>

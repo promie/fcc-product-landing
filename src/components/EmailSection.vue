@@ -31,6 +31,7 @@ export default {
   margin-bottom: 10px;
   font-family: 'Dancing Script', cursive;
   color: pink;
+  padding: 5px;
 }
 
 input {

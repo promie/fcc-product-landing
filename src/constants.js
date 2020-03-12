@@ -21,3 +21,36 @@ export const FEATURES = [
       'Our same day delivery service can deliver your urgent documents and parcels to the door, anywhere in Australia as soon as possible, 24 hours a day, 7 days a week.'
   }
 ]
+
+export const PRODUCTS = [
+  {
+    title: 'Title 1',
+    price: 600,
+    description: [
+      'Description 1',
+      'Description 2',
+      'Description 3',
+      'Description 4'
+    ]
+  },
+  {
+    title: 'Title 2',
+    price: 300,
+    description: [
+      'Description 1',
+      'Description 2',
+      'Description 3',
+      'Description 4'
+    ]
+  },
+  {
+    title: 'Title 3',
+    price: 200,
+    description: [
+      'Description 1',
+      'Description 2',
+      'Description 3',
+      'Description 4'
+    ]
+  }
+]
