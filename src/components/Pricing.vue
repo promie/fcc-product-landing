@@ -45,7 +45,6 @@ export default {
 }
 
 .product > .level {
-  background-color: #ddd;
   background-color: pink;
   color: black;
   padding: 15px 0;
@@ -70,18 +69,17 @@ export default {
 .product > button {
   border: 0;
   margin: 15px 0;
-  background-color: lightblue;
+  background-color: pink;
 }
 
 .btn {
   padding: 0 20px;
   height: 40px;
   font-size: 1em;
-  font-weight: 900;
+  font-weight: bold;
   text-transform: uppercase;
-  border: 3px black solid;
+  color: black;
   border-radius: 2px;
-  background: transparent;
   cursor: pointer;
 }
 
