@@ -1,11 +1,19 @@
 <script>
+import Logo from './../assets/logo.jpg'
+
 export default {
-  name: 'EmailSection'
+  name: 'EmailSection',
+  computed: {
+    logo() {
+      return Logo
+    }
+  }
 }
 </script>
 
 <template>
   <div>
+    <img v-bind:src="logo" alt="Northstar Fashion Logo" class="logo" />
     <div class="title-description">A place where fashionistas come to life</div>
     <form>
       <input type="text" placeholder="Enter your email address" />
@@ -31,5 +39,17 @@ input {
   margin-bottom: 5px;
   height: 20px;
   width: 300px;
+}
+
+.logo {
+  width: 270px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    width: 400px;
+    margin-bottom: 10px;
+  }
 }
 </style>
