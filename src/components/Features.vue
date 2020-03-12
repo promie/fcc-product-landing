@@ -21,7 +21,7 @@ export default {
 <template>
   <div class="inner-feature">
     <div class="icon-section">
-      <font-awesome-icon v-bind:icon="icon" size="4x" class="fa-icon" />
+      <font-awesome-icon v-bind:icon="icon" class="fa-icon" />
     </div>
 
     <div class="description-section">
@@ -37,6 +37,7 @@ export default {
 
 .fa-icon {
   color: pink;
+  font-size: 60px;
 }
 
 .feature-title {
@@ -65,12 +66,16 @@ export default {
 }
 
 @media only screen and (min-width: 768px) {
+  .fa-icon {
+    font-size: 70px;
+  }
   .inner-feature {
     flex-direction: row;
     margin: auto;
     text-align: justify;
     margin-bottom: 40px;
     padding: 0px;
+    width: 100%;
   }
   .icon-section {
     flex: 1;
@@ -78,6 +83,7 @@ export default {
   }
   .description-section {
     flex: 5;
+    width: 50%;
   }
   .feature-title {
     text-align: justify;

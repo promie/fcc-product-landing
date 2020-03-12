@@ -1,23 +1,23 @@
 export const FEATURES = [
   {
     id: 1,
-    icon: 'ad',
-    title: 'Premium Materials',
+    icon: 'tshirt',
+    title: 'Premium Quality',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+      "Combining high-quality materials, affordability, and flattering styles, our company makes the better basics you'll want to wear every day."
   },
   {
     id: 2,
-    icon: 'coffee',
+    icon: 'ship',
     title: 'Imported From Thailand',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+      'All our products are imported from Thailand of the highest qualities.'
   },
   {
     id: 3,
-    icon: 'child',
-    title: 'Best in the market',
+    icon: 'shipping-fast',
+    title: 'Fast Delivery',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+      'Our same day delivery service can deliver your urgent documents and parcels to the door, anywhere in Australia as soon as possible, 24 hours a day, 7 days a week.'
   }
 ]
