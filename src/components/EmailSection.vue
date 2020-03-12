@@ -16,8 +16,8 @@ export default {
     <img v-bind:src="logo" alt="Northstar Fashion Logo" class="logo" />
     <div class="title-description">A place where fashionistas come to life</div>
     <form>
-      <input type="text" placeholder="Enter your email address" />
-      <button>Get Started</button>
+      <input type="text" placeholder="Enter your email address" required />
+      <button class="button">Get Started</button>
     </form>
   </div>
 </template>
@@ -50,6 +50,27 @@ input {
   margin-bottom: 20px;
 }
 
+.button {
+  background-color: white;
+  border: none;
+  color: pink;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0px;
+  cursor: pointer;
+  border: 2px solid pink;
+  border-radius: 6px;
+}
+
+.button:hover {
+  background-color: pink;
+  color: white;
+  border: 2px solid white;
+}
+
 @media only screen and (min-width: 768px) {
   .logo {
     width: 400px;
@@ -57,6 +78,9 @@ input {
   }
   .title-description {
     font-size: 35px;
+  }
+  input {
+    width: 500px;
   }
 }
 </style>
