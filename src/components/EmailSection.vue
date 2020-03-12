@@ -27,8 +27,8 @@ export default {
 
 .title-description {
   font-weight: bold;
-  font-size: 35px;
-  margin-bottom: 5px;
+  font-size: 30px;
+  margin-bottom: 10px;
   font-family: 'Dancing Script', cursive;
   color: pink;
 }
@@ -39,6 +39,10 @@ input {
   margin-bottom: 5px;
   height: 20px;
   width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 8px;
+  font-size: 14px;
 }
 
 .logo {
@@ -50,6 +54,9 @@ input {
   .logo {
     width: 400px;
     margin-bottom: 10px;
+  }
+  .title-description {
+    font-size: 35px;
   }
 }
 </style>
