@@ -67,7 +67,6 @@ a {
 
 .header {
   margin: 0px;
-  /* background-color: #f4f4f4; */
   background-color: pink;
   position: fixed;
   top: 0;
