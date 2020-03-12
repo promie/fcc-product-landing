@@ -76,7 +76,7 @@ export default {
 }
 
 .video {
-  margin-top: 35px;
+  margin: 35px 0;
   text-align: center;
 }
 

@@ -6,7 +6,7 @@ export default {
 
 <template>
   <iframe
-    src="https://www.youtube.com/embed/exKJSq7uVYc"
+    src="https://www.youtube.com/embed/7m16dFI1AF8"
     class="iframe-video"
     height="300px"
     width="100%"
@@ -18,7 +18,7 @@ export default {
 <style scoped>
 .iframe-video {
   height: 300px;
-  width: 100%;
+  width: 90%;
 }
 
 @media only screen and (min-width: 768px) {
