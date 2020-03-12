@@ -93,7 +93,7 @@ export default {
     margin-top: 95px;
   }
   .features {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     padding: 0px 200px;
   }
