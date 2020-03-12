@@ -1,6 +1,11 @@
 <script>
 export default {
-  name: 'Navbar'
+  name: 'Navbar',
+  methods: {
+    smoothScrollTo(selector) {
+      this.$emit('smooth-scroll-to', selector)
+    }
+  }
 }
 </script>
 
@@ -8,9 +13,21 @@ export default {
   <header class="header">
     <h1 class="logo"><a href="#">Northstar Fashion</a></h1>
     <ul class="main-nav">
-      <li><a href="#">Features</a></li>
-      <li><a href="#">How It Works</a></li>
-      <li><a href="#">Pricing</a></li>
+      <li>
+        <a href="#features" v-on:click.prevent="smoothScrollTo('#features')"
+          >Features</a
+        >
+      </li>
+      <li>
+        <a href="#video" v-on:click.prevent="smoothScrollTo('#video')"
+          >How It Works</a
+        >
+      </li>
+      <li>
+        <a href="#pricing" v-on:click.prevent="smoothScrollTo('#pricing')"
+          >Pricing</a
+        >
+      </li>
     </ul>
   </header>
 </template>

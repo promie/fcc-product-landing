@@ -20,6 +20,11 @@ export default {
   created() {
     this.features = FEATURES
     this.products = PRODUCTS
+  },
+  methods: {
+    smoothScrollTo(selector) {
+      document.querySelector(selector).scrollIntoView({ behavior: 'smooth' })
+    }
   }
 }
 </script>
@@ -27,14 +32,14 @@ export default {
 <template>
   <div class="landing-wrapper">
     <div class="navbar">
-      <navbar />
+      <navbar v-on:smooth-scroll-to="smoothScrollTo" />
     </div>
 
     <div class="email-section">
       <email-section />
     </div>
 
-    <div class="features">
+    <div id="features" class="features">
       <features
         v-for="feature in features"
         v-bind:key="feature.id"
@@ -44,11 +49,11 @@ export default {
       />
     </div>
 
-    <div class="video">
+    <div id="video" class="video">
       <Video />
     </div>
 
-    <div class="pricing">
+    <div id="pricing" class="pricing">
       <Pricing
         v-for="(product, index) in products"
         v-bind:key="index"
