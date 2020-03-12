@@ -24,33 +24,24 @@ export const FEATURES = [
 
 export const PRODUCTS = [
   {
-    title: 'Title 1',
-    price: 600,
-    description: [
-      'Description 1',
-      'Description 2',
-      'Description 3',
-      'Description 4'
-    ]
+    title: 'Men Fashion',
+    price: 15,
+    description: ['Sweater', 'Shirt', 'Jeans', 'Suit', 'Much more...']
   },
   {
-    title: 'Title 2',
-    price: 300,
-    description: [
-      'Description 1',
-      'Description 2',
-      'Description 3',
-      'Description 4'
-    ]
+    title: 'Women Fashion',
+    price: 50,
+    description: ['Skirts', 'Dresses', 'Neckwear', 'Headbands', 'Much more...']
   },
   {
-    title: 'Title 3',
-    price: 200,
+    title: 'Children Fashion',
+    price: 40,
     description: [
-      'Description 1',
-      'Description 2',
-      'Description 3',
-      'Description 4'
+      'Designer Clothing',
+      'Casual Wear',
+      'Footwear',
+      'Accessories',
+      'Much more...'
     ]
   }
 ]

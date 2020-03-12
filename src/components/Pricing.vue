@@ -21,7 +21,7 @@ export default {
 <template>
   <div class="product">
     <div class="level">{{ title }}</div>
-    <h2 class="applied-font">${{ price }}</h2>
+    <h2 class="applied-font">From ${{ price }}</h2>
     <ul class="applied-font">
       <li v-for="des in description" v-bind:key="des">{{ des }}</li>
     </ul>
@@ -37,7 +37,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   width: 95%;
   margin: 10px;
   border: 1px solid grey;
@@ -52,6 +51,7 @@ export default {
   font-weight: 900;
   font-family: 'Dancing Script', cursive;
   font-size: 24px;
+  text-align: center;
 }
 
 .product > h2 {
