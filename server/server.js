@@ -1,6 +1,7 @@
 const express = require('express')
 const morgan = require('morgan')
 const cors = require('cors')
+const { NotFoundError } = require('./errors')
 const { globalErrorHandler } = require('./middleware')
 
 const app = express()
@@ -12,6 +13,11 @@ app.use(express.json({ extended: false }))
 
 // Routes
 app.use('/api/v1/email', require('./routes/email'))
+
+// Handling Unhandled Routes
+app.all('*', (req, res, next) => {
+  next(new NotFoundError(`Can't find ${req.originalUrl} on this server!`))
+})
 
 app.use(globalErrorHandler)
 

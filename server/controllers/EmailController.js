@@ -1,3 +1,5 @@
+const { PreconditionError } = require('../errors')
+
 const EmailController = () => {
   const validateEMail = email => {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
@@ -10,11 +12,12 @@ const EmailController = () => {
     const { email } = req.body
 
     if (!validateEMail(email)) {
-      console.log(`Email is not valid`)
-      return
+      return next(PreconditionError('Invalid Email'))
     }
 
-    console.log('Your email is correct and im going to send you an email')
+    // Send An Email
+
+    // Send Response to the client
   }
 
   return { createEmail }
