@@ -19,16 +19,24 @@ const EmailController = () => {
     const message = `Hi, thank you so much for showing interest in Northstar Fashion. You have now been added to the mailing list
                     for our latest products straight to your inbox ${email}`
 
-    await sendEmail({
-      email,
-      subject: 'Thank you for subscribing to Northstar Fashion',
-      message
-    })
+    try {
+      await sendEmail({
+        email,
+        subject: 'Thank you for subscribing to Northstar Fashion',
+        message
+      })
 
-    res.status(200).json({
-      status: 'success',
-      message: `Email subscription for Northstar Fashion sent to ${email}`
-    })
+      res.status(200).json({
+        status: 'success',
+        message: `Email subscription for Northstar Fashion sent to ${email}`
+      })
+    } catch (err) {
+      return next(
+        PreconditionError(
+          'There was an error sending the email. Please try later!'
+        )
+      )
+    }
   })
 
   return { createEmail }
