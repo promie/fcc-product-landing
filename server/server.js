@@ -1,6 +1,7 @@
 const express = require('express')
 const morgan = require('morgan')
 const cors = require('cors')
+const { globalErrorHandler } = require('./middleware')
 
 const app = express()
 
@@ -11,6 +12,8 @@ app.use(express.json({ extended: false }))
 
 // Routes
 app.use('/api/v1/email', require('./routes/email'))
+
+app.use(globalErrorHandler)
 
 const PORT = process.env.PORT || 5000
 
