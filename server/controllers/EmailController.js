@@ -1,5 +1,5 @@
 const { PreconditionError } = require('../errors')
-const { sendEmail } = require('./../utils')
+const { catchAsync, sendEmail } = require('./../utils')
 
 const EmailController = () => {
   const validateEMail = email => {
@@ -9,7 +9,7 @@ const EmailController = () => {
     return false
   }
 
-  const createEmail = async (req, res, next) => {
+  const createEmail = catchAsync(async (req, res, next) => {
     const { email } = req.body
 
     if (!email || !validateEMail(email)) {
@@ -29,7 +29,7 @@ const EmailController = () => {
       status: 'success',
       message: `Email subscription for Northstar Fashion sent to ${email}`
     })
-  }
+  })
 
   return { createEmail }
 }
